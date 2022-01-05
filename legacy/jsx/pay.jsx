@@ -90,15 +90,15 @@ class Sender extends React.Component {
         var message = "[SteemPay] " + info.message + (info.currency === "KRW" && ", " + info.amount + " KRW (Exchange Rate: " + info.rate + ") ");
         console.log(message);
         
-        if (steem_keychain) {
+        //if (steem_keychain) {
             steem_keychain.requestTransfer('', info.user, amount, message, 'STEEM', function(err, response) {
                 console.log(err, response);
                 if (err.error == null) {
                 } else {          
                 }
             });
-        } else {
-        }
+        //} else {
+        //}
         /*
 		var scUrl = "https://steemconnect.com/sign/transfer?to=" + info.user
                 + "&amount=" + encodeURIComponent(amount)
