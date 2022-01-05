@@ -91,7 +91,7 @@ class Sender extends React.Component {
         console.log(message);
         
         //if (steem_keychain) {
-            window.steem_keychain.requestTransfer('', info.user, amount, message, 'STEEM', function(err, response) {
+            steem_keychain.requestTransfer(account, info.user, amount, message, 'STEEM', function(err, response) {
                 console.log(err, response);
                 if (err.error == null) {
                 } else {          
