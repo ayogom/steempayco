@@ -240,11 +240,18 @@ class Receiver extends React.Component {
                     Steem pay with keychain
                 </div>
 		<div className="page-title-body">
-                    Steem pay 는 Steem을 이용한 결제 시스템입니다. 판매자가 금액을 입력 후 QR 생성 후 구매자에게 QR 을 보여주면 구매자는 아래의 QR을 읽어 Steem을 송금하는 페이지로 이동이 되며, 송금은 Keychain을 통해 송금 됩니다. 해당 서비스는 Kiwi Browser 를 이용해야 사용 할 수 있습니다.
+                    Steem pay 는 Steem을 이용한 결제 시스템입니다. <br></br>
+		    1. 판매자는 판매자의 계정 및 가격 그리고 메모(기록 및 영수증 목적)을 입력 후 [QR생성(판매)] 를 클릭.<br></br>
+		    2. 판매자는 표시된 QR 이미지를 구매자에게 전달.<br></br>
+		    3. 구매자는 받은 QR 이미지를 아래의 [QR읽기(구입)]을 통해 읽기<br></br>
+		    4. 표시된 Keychan 에서 송금. <br></br>
+                </div>
+		<div className="page-title-body2">
+                    해당 서비스는 Kiwi Browser 를 이용해야 사용 할 수 있습니다.
                 </div>	
 		<br></br>    
                 <div className="page-top">
-                    제품 구입 시 사용.
+                    제품 구입 시 사용. 
                 </div>		    
                 <button type="button" 
 		    className="btn btn-secondary btn-lg btn-block mb-2"
