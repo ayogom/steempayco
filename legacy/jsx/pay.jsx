@@ -275,7 +275,8 @@ class Receiver extends React.Component {
                 </button>
 		 <br></br>
                 <button type="button" 
-                    onclick="location.href='https://www.the-qrcode-generator.com/scan';"> QR 읽기 (구입) 
+		    className="btn btn-secondary btn-lg btn-block mb-2"
+		    onclick="window.location.href = 'https://www.the-qrcode-generator.com/scan'"> QR 읽기 (구입) 
                 </button>
                 {this.state.qrData && (
                     <img src={this.state.qrData}/>
