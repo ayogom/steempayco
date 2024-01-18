@@ -243,7 +243,7 @@ class Receiver extends React.Component {
                     Steem pay 는 Steem을 이용한 결제 시스템입니다. <br></br>
 		    1. 판매자는 판매자의 계정 및 가격 그리고 메모(기록 및 영수증 목적)을 입력 후 [QR생성(판매)] 를 클릭.<br></br>
 		    2. 판매자는 표시된 QR 이미지를 구매자에게 전달.<br></br>
-		    3. 구매자는 받은 QR 이미지를 아래의 [QR읽기(구입)]을 통해 읽기<br></br>
+		    3. 구매자는 받은 QR 이미지를 아래의 [QR읽기(구입)]을 통해 확인.<br></br>
 		    4. 표시된 Keychan 에서 송금. <br></br>
                 </div>
 		<div className="page-title-body2">
@@ -259,7 +259,7 @@ class Receiver extends React.Component {
 		</button>
 		<br></br>
                 <div className="page-top">
-                    제품 판매 시 사용. 가격은 업비트 현 시세에 의해 변경                
+                    제품 판매 시 사용. 가격은 업비트 하루 평균 가격으로 결정됩니다.                
                 </div>		    
                 {this.state.price && (
                 <div className="price-feed">Upbit 24 Hour Average Price: 1 STEEM = {this.state.price} KRW ({this.state.lastFeedUpdate})</div>
