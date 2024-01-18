@@ -227,6 +227,10 @@ class Receiver extends React.Component {
             document.getElementById('pay-detail'));
         $('#pay-modal').modal();
     }
+
+    readQR() {
+	location.href('https://www.the-qrcode-generator.com/scan')
+    }
     
     render() {
         return (
@@ -239,7 +243,7 @@ class Receiver extends React.Component {
                 </div>		    
                 <button type="button" 
 		    className="btn btn-secondary btn-lg btn-block mb-2"
-		    onclick="location.href = 'https://www.the-qrcode-generator.com/scan'"> QR 읽기 (구입) 
+		    onClick={() => this.readQR()}>QR 읽기 (구입)
                 </button>
 		<br></br>
                 <div className="page-top">
