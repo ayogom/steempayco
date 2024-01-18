@@ -1,3 +1,4 @@
+const qrreadurl = "https://www.the-qrcode-generator.com/scan"
 
 class QRReader extends React.Component {
     constructor(props) {
@@ -241,12 +242,13 @@ class Receiver extends React.Component {
 		<div className="page-title-body">
                     Steem pay 는 Steem을 이용한 결제 시스템입니다. 판매자가 금액을 입력 후 QR 생성 후 구매자에게 QR 을 보여주면 구매자는 아래의 QR을 읽어 Steem을 송금하는 페이지로 이동이 되며, 송금은 Keychain을 통해 송금 됩니다. 해당 서비스는 Kiwi Browser 를 이용해야 사용 할 수 있습니다.
                 </div>	
+		<br></br>    
                 <div className="page-top">
                     제품 구입 시 사용.
                 </div>		    
                 <button type="button" 
 		    className="btn btn-secondary btn-lg btn-block mb-2"
-                    onClick={() => handleOpenNewTab("https://www.the-qrcode-generator.com/scan")}>QR 읽기 (구입)
+                    onClick={()=>{window.open(qrreadurl)}}>QR 읽기 (구입)
 		</button>
 		<br></br>
                 <div className="page-top">
