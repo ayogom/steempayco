@@ -239,15 +239,15 @@ class Receiver extends React.Component {
                     Steem pay with keychain
                 </div>
                 <div className="page-top">
-                    제품 구입 시 사용
+                    제품 구입 시 사용.
                 </div>		    
                 <button type="button" 
 		    className="btn btn-secondary btn-lg btn-block mb-2"
-		    onClick={() => window.open('https://www.the-qrcode-generator.com/scan', '_blank')}>QR 읽기 (구입)
-                </button>
+                    onClick={() => handleOpenNewTab("https://www.the-qrcode-generator.com/scan")}>QR 읽기 (구입)
+		</button>
 		<br></br>
                 <div className="page-top">
-                    제품 판매 시 사용. 업비트 가격 연동                
+                    제품 판매 시 사용. 가격은 업비트 현 시세에 의해 변경                
                 </div>		    
                 {this.state.price && (
                 <div className="price-feed">Upbit 24 Hour Average Price: 1 STEEM = {this.state.price} KRW ({this.state.lastFeedUpdate})</div>
