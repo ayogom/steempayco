@@ -243,7 +243,7 @@ class Receiver extends React.Component {
                 </div>		    
                 <button type="button" 
 		    className="btn btn-secondary btn-lg btn-block mb-2"
-		    onClick={() => this.readQR()}>QR 읽기 (구입)
+		    onClick={() => window.open('https://www.the-qrcode-generator.com/scan', '_blank')}>QR 읽기 (구입)
                 </button>
 		<br></br>
                 <div className="page-top">
