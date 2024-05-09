@@ -151,7 +151,7 @@ class PayDetail extends React.Component {
         var baseUrl = document.location.href;
         var url = baseUrl + "/?pay=" + b64EncodeUnicode(JSON.stringify(msg));
         console.log(url);
-        return "https://chart.googleapis.com/chart?chs=400x400&cht=qr&chl=" + encodeURIComponent(url) + "&choe=UTF-8";
+        return "https://quickchart.io/qr?text=" + encodeURIComponent(url) + "&size=300";
     }
 
     render() {
